@@ -17,6 +17,7 @@ jobs:
           -H "Content-Type: application/json" \
           -d '{
             "chat_id": "${{ secrets.CHAT_ID }}",
+            "message_thread_id": 6,
             "question": "🎮 Играем сегодня?",
             "options": ["✅ ДА", "❌ НЕТ"],
             "is_anonymous": false,
